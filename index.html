@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Osman Bayram - Software Engineer Student</title>
+    <link rel="icon"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNMTkgMjF2LTJhNCA0IDAgMCAwLTQtNEg5YTQgNCAwIDAgMC00IDR2MiIvPjxjaXJjbGUgY3g9IjEyIiBjeT0iNyIgcj0iNCIvPjwvc3ZnPg=="
+        type="image/svg+xml">
+    <meta name="description"
+        content="Portfolio of Muhammed Osman Bayram, a Computer Programming Student and Cybersecurity Researcher.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS and Scripts -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">MOB</div>
+            <div class="controls">
+                <button id="lang-toggle" class="icon-btn" aria-label="Toggle Language">
+                    <span id="lang-label">TR</span>
+                </button>
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <svg id="theme-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="greeting" data-i18n="heroGreeting">Hello, I am</p>
+                <h1 class="name">Muhammed Osman Bayram</h1>
+                <h2 class="title" data-i18n="heroSubtitle">Computer Programming Student at Istanbul
+                    University-Cerrahpasa & Cybersecurity Researcher</h2>
+                <p class="vision" data-i18n="heroDesc">
+                    A motivated student seeking internship opportunities, passionate about building secure systems using
+                    Python, Docker, and PostgreSQL architectures, with practical field experience in cybersecurity.
+                </p>
+                <div class="actions">
+                    <a href="#projects" class="btn btn-primary" data-i18n="btnProjects">See My Projects</a>
+                    <a href="https://github.com/osmnabyram" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline" data-i18n="btnGithub">GitHub</a>
+                </div>
+            </div>
+            <div class="hero-graphics">
+                <div class="glow-sphere"></div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills" id="skills">
+            <h3 class="section-title" data-i18n="skillsTitle">Tech Stack & Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-tag">Python</div>
+                <div class="skill-tag">C++</div>
+                <div class="skill-tag">Java</div>
+                <div class="skill-tag">Docker</div>
+                <div class="skill-tag">PostgreSQL</div>
+                <div class="skill-tag">SQL (MySQL)</div>
+                <div class="skill-tag">Shell Scripting</div>
+                <div class="skill-tag">AppSec</div>
+                <div class="skill-tag">Selenium</div>
+                <div class="skill-tag">ESP32</div>
+                <div class="skill-tag">Firmware Optimization</div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <h3 class="section-title" data-i18n="projectsTitle">Featured Projects</h3>
+
+            <!-- Category A: Cybersecurity Achievements -->
+            <div class="projects-category">
+                <h4 class="category-title" data-i18n="catA_Title">Cybersecurity Achievements</h4>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <div class="project-img-container">
+                            <img src="assets/images/Kanit2.png" alt="Siber Keşif ve Etik Raporlama Görseli">
+                        </div>
+                        <h4 class="card-title" data-i18n="proj1Title">Cyber Recon & Ethical Reporting</h4>
+                        <p class="card-desc" data-i18n="proj1Desc">Detected a critical vulnerability allowing
+                            unauthorized access to sensitive data on a national IP address utilizing Shodan and OSINT
+                            tools. Reported the finding ethically via HackerOne and USOM.</p>
+                        <div class="card-tech">
+                            <span>Shodan</span>
+                            <span>OSINT</span>
+                            <span>Ethical Hacking</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="16" height="16" x="4" y="4" rx="2" />
+                                <rect width="6" height="6" x="9" y="9" rx="1" />
+                                <path d="M15 2v2" />
+                                <path d="M15 20v2" />
+                                <path d="M2 15h2" />
+                                <path d="M2 9h2" />
+                                <path d="M20 15h2" />
+                                <path d="M20 9h2" />
+                                <path d="M9 2v2" />
+                                <path d="M9 20v2" />
+                            </svg>
+                        </div>
+                        <div class="project-img-container">
+                            <img src="assets/images/esp32-hardware.jpg" alt="ESP32 Fiziksel Sızma Testi Aracı Görseli">
+                        </div>
+                        <h4 class="card-title" data-i18n="proj2Title">ESP32 Physical Pentest Tool</h4>
+                        <p class="card-desc" data-i18n="proj2Desc">Compiled a custom firmware in C++ for the ESP32-S3
+                            chip to develop an offensive network analysis station targeting Wi-Fi and BLE protocols
+                            (Deauth, Packet Sniffing).</p>
+                        <div class="card-tech">
+                            <span>C++</span>
+                            <span>ESP32-S3</span>
+                            <span>Wi-Fi / BLE</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m8 2 1.88 1.88" />
+                                <path d="M14.12 3.88 16 2" />
+                                <path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1" />
+                                <path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6" />
+                                <path d="M12 20v-9" />
+                                <path d="M6.53 9C4.6 8.8 3 7.1 3 5" />
+                                <path d="M6 13H2" />
+                                <path d="M3 21c0-2.1 1.7-3.9 3.8-4" />
+                                <path d="M20.97 5c0 2.1-1.6 3.8-3.5 4" />
+                                <path d="M22 13h-4" />
+                                <path d="M17.2 17c2.1.1 3.8 1.9 3.8 4" />
+                            </svg>
+                        </div>
+                        <div class="project-img-container">
+                            <img src="assets/images/web-pentest-kanit.jpg" alt="Profesyonel Web Sızma Testi Görseli">
+                        </div>
+                        <h4 class="card-title" data-i18n="proj3Title">Professional Web Pentest</h4>
+                        <p class="card-desc" data-i18n="proj3Desc">Proved a critical client-side "Subscription Bypass"
+                            vulnerability on Next.js and Clerk architectures by manipulating HTTP requests with Burp
+                            Suite.</p>
+                        <div class="card-tech">
+                            <span>Next.js</span>
+                            <span>Burp Suite</span>
+                            <span>Pentest</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Category B: Developed Tools & Projects -->
+            <div class="projects-category">
+                <h4 class="category-title" data-i18n="catB_Title">Developed Tools & Projects</h4>
+                <div class="projects-grid">
+
+                    <!-- Project 4: S3M_NAC_Project -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="m9 12 2 2 4-4" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/S3M_NAC_Project" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj4Title">S3M_NAC_Project</h4>
+                        <p class="card-desc" data-i18n="proj4Desc"></p>
+                        <div class="card-tech">
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 5: Siber-NetSpider -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                                <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                                <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                                <line x1="12" y1="20" x2="12.01" y2="20" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-NetSpider" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj5Title">Siber-NetSpider</h4>
+                        <p class="card-desc" data-i18n="proj5Desc"></p>
+                        <div class="card-tech">
+                            <span>Network</span>
+                            <span>Wi-Fi</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6: Siber-VenomintelOsint -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <path d="m21 21-4.3-4.3" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-VenomintelOsint" target="_blank"
+                                class="github-link" aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj6Title">Siber-VenomintelOsint</h4>
+                        <p class="card-desc" data-i18n="proj6Desc"></p>
+                        <div class="card-tech">
+                            <span>OSINT</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 7: Siber-Scamp -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 10h.01" />
+                                <path d="M15 10h.01" />
+                                <path
+                                    d="M12 2a8 8 0 0 0-8 8v12l3-3 2.5 2.5L12 19l2.5 2.5L17 19l3 3V10a8 8 0 0 0-8-8z" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-Scamp" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj7Title">Siber-Scamp</h4>
+                        <p class="card-desc" data-i18n="proj7Desc"></p>
+                        <div class="card-tech">
+                            <span>Keylogger</span>
+                            <span>Surveillance</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 8: Siber-QuiteCat -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5" />
+                                <line x1="12" y1="19" x2="20" y2="19" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-QuiteCat" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj8Title">Siber-QuiteCat</h4>
+                        <p class="card-desc" data-i18n="proj8Desc"></p>
+                        <div class="card-tech">
+                            <span>Python</span>
+                            <span>Metasploit</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 9: Siber-Owl -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-Owl" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj9Title">Siber-Owl</h4>
+                        <p class="card-desc" data-i18n="proj9Desc"></p>
+                        <div class="card-tech">
+                            <span>Privacy</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+
+                    <!-- Project 10: Siber-IrisIp -->
+                    <div class="project-card">
+                        <div class="card-header">
+                            <svg class="folder-icon" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                            <a href="https://github.com/osmnabyram/Siber-IrisIp" target="_blank" class="github-link"
+                                aria-label="GitHub Link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                                </svg>
+                            </a>
+                        </div>
+                        <h4 class="card-title" data-i18n="proj10Title">Siber-IrisIp</h4>
+                        <p class="card-desc" data-i18n="proj10Desc"></p>
+                        <div class="card-tech">
+                            <span>Scanning</span>
+                            <span>Network</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Category Footer: GitHub Button -->
+                <div class="category-footer">
+                    <a href="https://github.com/osmnabyram" target="_blank" rel="noopener noreferrer"
+                        class="btn btn-outline" data-i18n="btnViewAllGithub">View on GitHub</a>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3 class="footer-title" data-i18n="footerTitle">Get In Touch</h3>
+        <p class="footer-desc" data-i18n="footerDesc">I'm currently looking for new opportunities in software
+            engineering and cybersecurity.</p>
+        <div class="social-links">
+            <a href="#" id="copy-email-btn" title="osmanbayram2882@gmail.com" class="social-icon" aria-label="Email">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+            </a>
+            <a href="https://github.com/osmnabyram" target="_blank" class="social-icon" aria-label="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                    <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/osman-bayram-3772032a7/" target="_blank" class="social-icon"
+                aria-label="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect width="4" height="12" x="2" y="9" />
+                    <circle cx="4" cy="4" r="2" />
+                </svg>
+            </a>
+        </div>
+        <p class="copyright">Muhammed Osman Bayram</p>
+    </footer>
+
+</body>
+
+</html>
