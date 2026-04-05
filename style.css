@@ -355,6 +355,11 @@ a {
     transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
+/* ESP32 cihazı ortada gözüksün */
+.esp32-img {
+    object-position: center 30%;
+}
+
 .card-header {
     display: flex;
     justify-content: space-between;
