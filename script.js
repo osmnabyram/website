@@ -67,7 +67,7 @@ const translations = {
         proj2Desc: "ESP32-S3 çipi üzerinde C++ ile özel bir firmware derleyerek; Wi-Fi ve BLE protokollerine yönelik ofansif bir ağ analiz istasyonu geliştirdim (Deauth, Packet Sniffing).",
 
         proj3Title: "Profesyonel Web Sızma Testi (Pentest)",
-        proj3Desc: "Next.js ve Clerk tabanlı mimarilerde Burp Suite ile HTTP isteklerini manipüle ederek istemci taraflı kritik \"Subscription Bypass\" zafiyetini kanıtladım.",
+        proj3Desc: "Kendimde sağladığım bir hizmet olan web sızma işlemleri ile testler yaparak bu becerimi sadece teoridide değil, sahada da geliştirdim.",
 
         // Category B
         catB_Title: "Geliştirdiğim Araçlar ve Projeler",
